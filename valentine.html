@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7 Month's Celebration</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #f76ab0, #de37ff);
+        color: #333;
+        text-align: center;
+      }
+      header {
+        background: #f76ab0;
+        color: #fff;
+        padding: 20px 10px;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+      main {
+        padding: 20px;
+      }
+      .interactive {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 500px;
+      }
+      .interactive button {
+        background: #ff50d9;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2em;
+      }
+      .interactive button:hover {
+        background: #e85a4f;
+      }
+      .message {
+        margin-top: 20px;
+        font-size: 1.5em;
+        color: #ff6f61;
+      }
+      footer {
+        background: #e85a4f;
+        color: #fff;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+    <script>
+      function showLoveMessage() {
+        const messages = [
+          "You are my babygurll! ❤️",
+          "Terima kasih ya udah mau sama aku yang cuek abiez ini! 💕",
+          "Tetap tersenyum ya sama aku! 😊",
+          "Nisennen... Moshiku wa... Nimannengo no Kimi e...! 🌹",
+          "Be a good girl my sunshine! 🌟",
+        ];
+        const randomMessage =
+          messages[Math.floor(Math.random() * messages.length)];
+        document.getElementById("love-message").textContent = randomMessage;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Happy 7 Month's, My Love!</h1>
+      <p>Celebrating our special bond today and always.</p>
+    </header>
+
+    <main>
+      <div class="interactive">
+        <h2>Click the Button for a Special Message</h2>
+        <button onclick="showLoveMessage()">Get a Message</button>
+        <p id="love-message" class="message"></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Your Love's Website. With love, always. ❤️</p>
+    </footer>
+  </body>
+</html>
